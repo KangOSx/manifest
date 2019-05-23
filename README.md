@@ -1,11 +1,20 @@
-KangOSx
-Sync
+# KangOSx #
+
+### Sync ###
+
+```bash
+
 # Initialize local repository
 repo init -u https://github.com/KangOSx/manifest -b pie
 
 # Sync
-repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
-Build
+repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+```
+
+### Build ###
+
+```bash
+
 # Set up environment
 $ . build/envsetup.sh
 
@@ -14,5 +23,9 @@ $ lunch aosp_$device-userdebug
 
 # Build the code
 $ mka bacon -jX
-Submitting Patches
+```
+
+### Submitting Patches ###
+
 No patches are accepted
+
